@@ -1,0 +1,14 @@
+scikit-learn
+pandas
+numpy
+seaborn
+matplotlib
+fastparquet
+pyarrow
+dill
+notebook
+PyYAML
+joblib
+types-PyYAML
+Flask
+Flask-Cors
