@@ -1,23 +1,19 @@
-import os
-import sys
 import logging
+from datetime import date
+from pathlib import Path
 
-logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
+LOG_DIR_PATH = Path('logs')
+LOG_DIR_PATH.mkdir(exist_ok=True)
 
-log_dir = "logs"
-
-log_filepath = os.path.join(log_dir, "running_log.log")
-os.makedirs(log_dir, exist_ok=True)
-
+LOG_FILE_PATH = LOG_DIR_PATH / (date.today().strftime('%d-%m-%Y') + '.log')
 
 logging.basicConfig(
-    level = logging.INFO,
-    format = logging_str,
-
-    handlers=[
-        logging.FileHandler(log_filepath),
-        logging.StreamHandler(sys.stdout)
+    
+    format="[ %(asctime)s ] %(filename)s:[%(lineno)d] %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO,
+    handlers= [ 
+        logging.FileHandler(LOG_FILE_PATH)
     ]
 )
 
-logger = logging.getLogger("mlProjectLogger")
+
