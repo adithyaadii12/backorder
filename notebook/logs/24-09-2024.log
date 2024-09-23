@@ -2,3 +2,8 @@
 [ 2024-09-24 00:49:01,035 ] utils.py:[160] numexpr.utils - INFO - NumExpr defaulting to 4 threads.
 [ 2024-09-24 00:49:21,368 ] 3556791690.py:[1] root - INFO - data cleaning is done
 [ 2024-09-24 00:49:27,523 ] 3367669199.py:[1] root - INFO - eda will start
+[ 2024-09-24 00:53:12,842 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
+[ 2024-09-24 00:53:13,939 ] utils.py:[160] numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[ 2024-09-24 00:53:45,278 ] 3556791690.py:[1] root - INFO - data cleaning is done
+[ 2024-09-24 00:53:59,438 ] 3367669199.py:[1] root - INFO - eda will start
+[ 2024-09-24 04:35:37,492 ] 1100314905.py:[1] root - INFO - eda over and model building will start
