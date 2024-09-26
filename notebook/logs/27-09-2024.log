@@ -1,0 +1,69 @@
+[ 2024-09-27 02:33:13,822 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
+[ 2024-09-27 02:33:56,259 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
+[ 2024-09-27 02:34:05,497 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
+[ 2024-09-27 02:34:29,668 ] font_manager.py:[1584] matplotlib.font_manager - INFO - generated new fontManager
+[ 2024-09-27 02:52:41,144 ] 3340298241.py:[1] root - INFO - data cleaning is done and feature selection will start
+[ 2024-09-27 03:00:43,030 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
+[ 2024-09-27 03:01:07,568 ] 3340298241.py:[1] root - INFO - data cleaning is done and feature selection will start
+[ 2024-09-27 03:03:05,193 ] 3367669199.py:[1] root - INFO - eda will start
+[ 2024-09-27 03:07:46,916 ] 1100314905.py:[1] root - INFO - eda over and model building will start
+[ 2024-09-27 03:09:28,489 ] 3264901989.py:[4] root - INFO - national_inv        -0.001315
+lead_time           -0.018104
+in_transit_qty      -0.002427
+forecast_3_month    -0.000340
+forecast_6_month    -0.000840
+forecast_9_month    -0.001030
+sales_1_month       -0.001131
+sales_3_month       -0.001512
+sales_6_month       -0.001728
+sales_9_month       -0.001764
+min_bank            -0.001867
+potential_issue      0.014090
+pieces_past_due      0.000516
+perf_6_month_avg     0.011676
+perf_12_month_avg    0.011593
+local_bo_qty         0.009504
+deck_risk           -0.011691
+oe_constraint        0.003837
+ppap_risk            0.008814
+stop_auto_buy       -0.002424
+rev_stop            -0.001708
+Name: went_on_backorder, dtype: float64
+[ 2024-09-27 03:10:38,399 ] 3283737638.py:[4] root - INFO - lead_time           -0.018104
+potential_issue      0.014090
+deck_risk           -0.011691
+perf_6_month_avg     0.011676
+perf_12_month_avg    0.011593
+local_bo_qty         0.009504
+ppap_risk            0.008814
+oe_constraint        0.003837
+in_transit_qty      -0.002427
+stop_auto_buy       -0.002424
+min_bank            -0.001867
+sales_9_month       -0.001764
+Name: went_on_backorder, dtype: float64
+[ 2024-09-27 03:11:46,064 ] 3264901989.py:[4] root - INFO - national_inv        -0.001315
+lead_time           -0.018104
+in_transit_qty      -0.002427
+forecast_3_month    -0.000340
+forecast_6_month    -0.000840
+forecast_9_month    -0.001030
+sales_1_month       -0.001131
+sales_3_month       -0.001512
+sales_6_month       -0.001728
+sales_9_month       -0.001764
+min_bank            -0.001867
+potential_issue      0.014090
+pieces_past_due      0.000516
+perf_6_month_avg     0.011676
+perf_12_month_avg    0.011593
+local_bo_qty         0.009504
+deck_risk           -0.011691
+oe_constraint        0.003837
+ppap_risk            0.008814
+stop_auto_buy       -0.002424
+rev_stop            -0.001708
+Name: went_on_backorder, dtype: float64
+[ 2024-09-27 03:12:40,662 ] 1618159808.py:[2] root - INFO - Resampling data...
+[ 2024-09-27 03:23:09,609 ] 1760928088.py:[1] root - INFO - model building and eda are done
+[ 2024-09-27 03:34:52,581 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
