@@ -1,9 +1,0 @@
-[ 2024-09-23 01:48:29,915 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
-[ 2024-09-23 01:59:19,226 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
-[ 2024-09-23 01:59:32,602 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
-[ 2024-09-23 02:00:14,089 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
-[ 2024-09-23 02:00:54,651 ] 2451648868.py:[1] root - INFO - testing log in ipynb file
-[ 2024-09-23 03:38:25,337 ] utils.py:[160] numexpr.utils - INFO - NumExpr defaulting to 4 threads.
-[ 2024-09-23 03:38:30,115 ] font_manager.py:[1578] matplotlib.font_manager - INFO - generated new fontManager
-[ 2024-09-23 05:08:41,858 ] 3556791690.py:[1] root - INFO - data cleaning is done
-[ 2024-09-23 05:21:02,966 ] 3367669199.py:[1] root - INFO - eda will start
