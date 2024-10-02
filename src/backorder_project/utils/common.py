@@ -13,7 +13,7 @@ from pandas import DataFrame
 import sys
 sys.path.append('C:\\Users\\adith\\Desktop\\backorder\\src')
 from backorder_project.logger import logging
-from backorder_project.exception import CustomException
+from exception import CustomException
 
 
 
