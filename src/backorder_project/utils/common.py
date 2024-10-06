@@ -50,7 +50,7 @@ def read_dataset(fp: Path) -> DataFrame:
     
     # If the file is a CSV, pass the low_memory=False argument
     if suffix == 'csv':
-        df: DataFrame = pd.read_csv(fp, low_memory=False)
+        df: DataFrame = pd.read_csv(fp, low_memory=False, index_col=0)
     else:
         df: DataFrame = getattr(pd, pd_attr)(fp)  # For other formats like parquet
 

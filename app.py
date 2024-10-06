@@ -64,7 +64,7 @@ def batch_prediction():
         return jsonify({'error': 'No file selected'})
 
     try:
-        df = pd.read_csv(file.stream)
+        df = pd.read_csv(file.stream, low_memory=False)
         prediction_fp = prediction.batch_prediction(df)
         return {
             'message': 'Prediction Completed!',
