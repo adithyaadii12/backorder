@@ -43,12 +43,19 @@ def read_dataset(fp: Path) -> DataFrame:
     # Print and log the warning
     if suffix not in ['csv', 'parquet']:
         warn_msg = 'utils.read_dataset: Supports CSV and parquet files easily.'
-        warn(warn_msg)
-        logging.warn(warn_msg)
+        Warning(warn_msg)
+        logging.warning(warn_msg)
 
     pd_attr = 'read_' + suffix
-    df: DataFrame = getattr(pd, pd_attr)(fp)
+    
+    # If the file is a CSV, pass the low_memory=False argument
+    if suffix == 'csv':
+        df: DataFrame = pd.read_csv(fp, low_memory=False)
+    else:
+        df: DataFrame = getattr(pd, pd_attr)(fp)  # For other formats like parquet
+
     return df
+
 
 
 def to_yaml(fp: Path, data: dict):
