@@ -122,3 +122,138 @@
 [ 2024-10-07 05:17:58,917 ] common.py:[75] root - INFO - Loading object from stored_models\0\target_encoder.pkl
 [ 2024-10-07 05:17:58,917 ] common.py:[75] root - INFO - Loading object from stored_models\0\model.pkl
 [ 2024-10-07 05:17:59,046 ] _internal.py:[97] werkzeug - INFO - 127.0.0.1 - - [07/Oct/2024 05:17:59] "POST /one_prediction HTTP/1.1" 200 -
+[ 2024-10-07 20:36:47,259 ] prediction.py:[21] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Prediction <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:36:47,331 ] _internal.py:[97] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.9:8080
+[ 2024-10-07 20:36:47,331 ] _internal.py:[97] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-10-07 20:36:47,331 ] _internal.py:[97] werkzeug - INFO -  * Restarting with stat
+[ 2024-10-07 20:36:50,309 ] prediction.py:[21] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Prediction <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:36:50,324 ] _internal.py:[97] werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-07 20:36:50,324 ] _internal.py:[97] werkzeug - INFO -  * Debugger PIN: 238-093-209
+[ 2024-10-07 20:39:06,029 ] prediction.py:[21] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Prediction <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:39:06,069 ] _internal.py:[97] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.9:8080
+[ 2024-10-07 20:39:06,069 ] _internal.py:[97] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-10-07 20:39:06,071 ] _internal.py:[97] werkzeug - INFO -  * Restarting with stat
+[ 2024-10-07 20:39:08,795 ] prediction.py:[21] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Prediction <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:39:08,811 ] _internal.py:[97] werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-07 20:39:08,811 ] _internal.py:[97] werkzeug - INFO -  * Debugger PIN: 238-093-209
+[ 2024-10-07 20:40:18,525 ] _internal.py:[97] werkzeug - INFO - 127.0.0.1 - - [07/Oct/2024 20:40:18] "GET / HTTP/1.1" 200 -
+[ 2024-10-07 20:40:18,630 ] _internal.py:[97] werkzeug - INFO - 127.0.0.1 - - [07/Oct/2024 20:40:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-10-07 20:40:19,664 ] app.py:[29] app - INFO - Training started...
+[ 2024-10-07 20:40:19,664 ] ingestion.py:[27] root - INFO - >>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:40:19,664 ] ingestion.py:[34] root - INFO - Importing main data from "C:\Users\adith\Desktop\backorder\data\filtered_top100k_and_bot100k_backorder_dataset.csv"
+[ 2024-10-07 20:40:20,653 ] ingestion.py:[76] root - INFO - Shape of imported raw data (200000, 22)
+[ 2024-10-07 20:40:21,518 ] ingestion.py:[86] root - INFO - Shape of upsampled raw data (397418, 22)
+[ 2024-10-07 20:40:21,518 ] ingestion.py:[88] root - INFO - Split DataFrame into train and test.
+[ 2024-10-07 20:40:21,913 ] ingestion.py:[90] root - INFO - Train data shape: (317934, 22)
+[ 2024-10-07 20:40:21,918 ] ingestion.py:[91] root - INFO - Test data shape: (79484, 22)
+[ 2024-10-07 20:40:21,918 ] ingestion.py:[53] root - INFO - Saving DataFrame at "artifacts\100724__20\data_ingestion\dataset\train.parquet"
+[ 2024-10-07 20:40:24,092 ] ingestion.py:[53] root - INFO - Saving DataFrame at "artifacts\100724__20\data_ingestion\dataset\test.parquet"
+[ 2024-10-07 20:40:24,602 ] ingestion.py:[99] root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_fp=WindowsPath('artifacts/100724__20/data_ingestion/feature_store/filtered_top100k_and_bot100k_backorder_dataset.csv'), train_path=WindowsPath('artifacts/100724__20/data_ingestion/dataset/train.parquet'), test_path=WindowsPath('artifacts/100724__20/data_ingestion/dataset/test.parquet'))
+[ 2024-10-07 20:40:24,854 ] validation.py:[21] root - INFO - >>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:40:24,854 ] validation.py:[94] root - INFO - Reading base DataFrame
+[ 2024-10-07 20:40:25,819 ] validation.py:[97] root - INFO - Drop null values columns from base df
+[ 2024-10-07 20:40:25,819 ] validation.py:[102] root - INFO - Reading train DataFrame
+[ 2024-10-07 20:40:26,950 ] validation.py:[105] root - INFO - Drop null values columns from train df
+[ 2024-10-07 20:40:26,953 ] validation.py:[110] root - INFO - Reading test DataFrame
+[ 2024-10-07 20:40:27,089 ] validation.py:[113] root - INFO - Drop null values columns from test df
+[ 2024-10-07 20:40:27,089 ] validation.py:[128] root - INFO - Is all required columns present in train df
+[ 2024-10-07 20:40:27,089 ] validation.py:[132] root - INFO - All columns are available in train df hence detecting data drift
+[ 2024-10-07 20:40:27,089 ] validation.py:[77] root - INFO - Hypothesis national_inv: int64, int64
+[ 2024-10-07 20:40:27,342 ] validation.py:[77] root - INFO - Hypothesis lead_time: float64, float64
+[ 2024-10-07 20:40:27,490 ] validation.py:[77] root - INFO - Hypothesis in_transit_qty: int64, int64
+[ 2024-10-07 20:40:28,336 ] validation.py:[77] root - INFO - Hypothesis forecast_3_month: int64, int64
+[ 2024-10-07 20:40:28,620 ] validation.py:[77] root - INFO - Hypothesis forecast_6_month: int64, int64
+[ 2024-10-07 20:40:28,934 ] validation.py:[77] root - INFO - Hypothesis forecast_9_month: int64, int64
+[ 2024-10-07 20:40:29,220 ] validation.py:[77] root - INFO - Hypothesis sales_1_month: int64, int64
+[ 2024-10-07 20:40:29,502 ] validation.py:[77] root - INFO - Hypothesis sales_3_month: int64, int64
+[ 2024-10-07 20:40:29,887 ] validation.py:[77] root - INFO - Hypothesis sales_6_month: int64, int64
+[ 2024-10-07 20:40:30,169 ] validation.py:[77] root - INFO - Hypothesis sales_9_month: int64, int64
+[ 2024-10-07 20:40:30,443 ] validation.py:[77] root - INFO - Hypothesis min_bank: int64, int64
+[ 2024-10-07 20:40:31,195 ] validation.py:[77] root - INFO - Hypothesis potential_issue: object, object
+[ 2024-10-07 20:40:32,124 ] validation.py:[77] root - INFO - Hypothesis pieces_past_due: int64, int64
+[ 2024-10-07 20:40:32,536 ] validation.py:[77] root - INFO - Hypothesis perf_6_month_avg: float64, float64
+[ 2024-10-07 20:40:32,885 ] validation.py:[77] root - INFO - Hypothesis perf_12_month_avg: float64, float64
+[ 2024-10-07 20:40:33,217 ] validation.py:[77] root - INFO - Hypothesis local_bo_qty: int64, int64
+[ 2024-10-07 20:40:33,325 ] validation.py:[77] root - INFO - Hypothesis deck_risk: object, object
+[ 2024-10-07 20:40:34,641 ] validation.py:[77] root - INFO - Hypothesis oe_constraint: object, object
+[ 2024-10-07 20:40:35,461 ] validation.py:[77] root - INFO - Hypothesis ppap_risk: object, object
+[ 2024-10-07 20:40:36,864 ] validation.py:[77] root - INFO - Hypothesis stop_auto_buy: object, object
+[ 2024-10-07 20:40:37,466 ] validation.py:[77] root - INFO - Hypothesis rev_stop: object, object
+[ 2024-10-07 20:40:38,370 ] validation.py:[77] root - INFO - Hypothesis went_on_backorder: object, object
+[ 2024-10-07 20:40:39,402 ] validation.py:[137] root - INFO - Is all required columns present in test df
+[ 2024-10-07 20:40:39,402 ] validation.py:[141] root - INFO - All columns are available in test df hence detecting data drift
+[ 2024-10-07 20:40:39,402 ] validation.py:[77] root - INFO - Hypothesis national_inv: int64, int64
+[ 2024-10-07 20:40:39,465 ] validation.py:[77] root - INFO - Hypothesis lead_time: float64, float64
+[ 2024-10-07 20:40:39,585 ] validation.py:[77] root - INFO - Hypothesis in_transit_qty: int64, int64
+[ 2024-10-07 20:40:39,754 ] validation.py:[77] root - INFO - Hypothesis forecast_3_month: int64, int64
+[ 2024-10-07 20:40:39,802 ] validation.py:[77] root - INFO - Hypothesis forecast_6_month: int64, int64
+[ 2024-10-07 20:40:39,871 ] validation.py:[77] root - INFO - Hypothesis forecast_9_month: int64, int64
+[ 2024-10-07 20:40:39,929 ] validation.py:[77] root - INFO - Hypothesis sales_1_month: int64, int64
+[ 2024-10-07 20:40:39,990 ] validation.py:[77] root - INFO - Hypothesis sales_3_month: int64, int64
+[ 2024-10-07 20:40:40,051 ] validation.py:[77] root - INFO - Hypothesis sales_6_month: int64, int64
+[ 2024-10-07 20:40:40,109 ] validation.py:[77] root - INFO - Hypothesis sales_9_month: int64, int64
+[ 2024-10-07 20:40:40,169 ] validation.py:[77] root - INFO - Hypothesis min_bank: int64, int64
+[ 2024-10-07 20:40:40,338 ] validation.py:[77] root - INFO - Hypothesis potential_issue: object, object
+[ 2024-10-07 20:40:40,829 ] validation.py:[77] root - INFO - Hypothesis pieces_past_due: int64, int64
+[ 2024-10-07 20:40:40,993 ] validation.py:[77] root - INFO - Hypothesis perf_6_month_avg: float64, float64
+[ 2024-10-07 20:40:41,134 ] validation.py:[77] root - INFO - Hypothesis perf_12_month_avg: float64, float64
+[ 2024-10-07 20:40:41,260 ] validation.py:[77] root - INFO - Hypothesis local_bo_qty: int64, int64
+[ 2024-10-07 20:40:41,307 ] validation.py:[77] root - INFO - Hypothesis deck_risk: object, object
+[ 2024-10-07 20:40:41,976 ] validation.py:[77] root - INFO - Hypothesis oe_constraint: object, object
+[ 2024-10-07 20:40:42,433 ] validation.py:[77] root - INFO - Hypothesis ppap_risk: object, object
+[ 2024-10-07 20:40:43,159 ] validation.py:[77] root - INFO - Hypothesis stop_auto_buy: object, object
+[ 2024-10-07 20:40:43,500 ] validation.py:[77] root - INFO - Hypothesis rev_stop: object, object
+[ 2024-10-07 20:40:44,011 ] validation.py:[77] root - INFO - Hypothesis went_on_backorder: object, object
+[ 2024-10-07 20:40:44,634 ] validation.py:[146] root - INFO - Writing report in yaml file
+[ 2024-10-07 20:40:44,650 ] validation.py:[155] root - INFO - Data validation artifact: DataValidationArtifact(feature_store_fp=WindowsPath('artifacts/100724__20/data_ingestion/feature_store/filtered_top100k_and_bot100k_backorder_dataset.csv'), train_path=WindowsPath('artifacts/100724__20/data_ingestion/dataset/train.parquet'), test_path=WindowsPath('artifacts/100724__20/data_ingestion/dataset/test.parquet'), report_fp=WindowsPath('artifacts/100724__20/data_validation/report.yaml'))
+[ 2024-10-07 20:40:44,674 ] transformation.py:[24] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:40:46,345 ] common.py:[83] root - INFO - Dumping array at artifacts\100724__20\data_transformation\transformed\train.npz
+[ 2024-10-07 20:40:46,554 ] common.py:[83] root - INFO - Dumping array at artifacts\100724__20\data_transformation\transformed\test.npz
+[ 2024-10-07 20:40:46,567 ] common.py:[68] root - INFO - Dumping object at artifacts\100724__20\data_transformation\transformer.pkl
+[ 2024-10-07 20:40:46,575 ] common.py:[68] root - INFO - Dumping object at artifacts\100724__20\data_transformation\target_encoder.pkl
+[ 2024-10-07 20:40:46,575 ] transformation.py:[96] root - INFO - Data transformation object DataTransformationArtifact(transformer_pkl=WindowsPath('artifacts/100724__20/data_transformation/transformer.pkl'), target_enc_fp=WindowsPath('artifacts/100724__20/data_transformation/target_encoder.pkl'), train_npz_path=WindowsPath('artifacts/100724__20/data_transformation/transformed/train.npz'), test_npz_path=WindowsPath('artifacts/100724__20/data_transformation/transformed/test.npz'))
+[ 2024-10-07 20:40:46,614 ] trainer.py:[25] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:40:46,614 ] trainer.py:[26] root - INFO - Prediction type: classification
+[ 2024-10-07 20:40:46,614 ] trainer.py:[29] root - INFO - Loading train and test array.
+[ 2024-10-07 20:40:46,614 ] common.py:[89] root - INFO - Loading array from artifacts\100724__20\data_transformation\transformed\train.npz
+[ 2024-10-07 20:40:46,651 ] common.py:[89] root - INFO - Loading array from artifacts\100724__20\data_transformation\transformed\test.npz
+[ 2024-10-07 20:40:46,667 ] trainer.py:[33] root - INFO - Splitting into X and y from train and test array.
+[ 2024-10-07 20:40:46,667 ] trainer.py:[74] root - INFO - Train the model
+[ 2024-10-07 20:41:35,999 ] trainer.py:[49] root - INFO - Train score: 0.9990249548648462
+[ 2024-10-07 20:41:35,999 ] trainer.py:[50] root - INFO - Tests score: 0.998553167933169
+[ 2024-10-07 20:41:35,999 ] trainer.py:[54] root - INFO - Checking if our model is underfit or not
+[ 2024-10-07 20:41:35,999 ] trainer.py:[61] root - INFO - Checking if our model is overfit or not
+[ 2024-10-07 20:41:35,999 ] trainer.py:[83] root - INFO - Dumping trained model object.
+[ 2024-10-07 20:41:35,999 ] common.py:[68] root - INFO - Dumping object at artifacts\100724__20\model_trainer\model.pkl
+[ 2024-10-07 20:41:36,093 ] trainer.py:[89] root - INFO - Model trainer artifact: ModelTrainerArtifact(model_path=WindowsPath('artifacts/100724__20/model_trainer/model.pkl'), r2_train_score=0.9990249548648462, r2_test_score=0.998553167933169)
+[ 2024-10-07 20:41:36,109 ] evaluation.py:[32] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:41:36,109 ] evaluation.py:[52] root - INFO - ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=0)
+[ 2024-10-07 20:41:36,115 ] pusher.py:[24] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Pusher <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2024-10-07 20:41:36,115 ] pusher.py:[30] root - INFO - Loading dumped models from artifacts directory.
+[ 2024-10-07 20:41:36,115 ] common.py:[75] root - INFO - Loading object from artifacts\100724__20\data_transformation\transformer.pkl
+[ 2024-10-07 20:41:36,126 ] common.py:[75] root - INFO - Loading object from artifacts\100724__20\model_trainer\model.pkl
+[ 2024-10-07 20:41:36,254 ] common.py:[75] root - INFO - Loading object from artifacts\100724__20\data_transformation\target_encoder.pkl
+[ 2024-10-07 20:41:36,254 ] pusher.py:[35] root - INFO - Dumping models to `./artifacts/model_pusher` directory.
+[ 2024-10-07 20:41:36,266 ] common.py:[68] root - INFO - Dumping object at artifacts\100724__20\model_pusher\transformer.pkl
+[ 2024-10-07 20:41:36,267 ] common.py:[68] root - INFO - Dumping object at artifacts\100724__20\model_pusher\model.pkl
+[ 2024-10-07 20:41:36,346 ] common.py:[68] root - INFO - Dumping object at artifacts\100724__20\model_pusher\target_encoder.pkl
+[ 2024-10-07 20:41:36,346 ] pusher.py:[40] root - INFO - Dumping models to `./stored_models` directory.
+[ 2024-10-07 20:41:36,346 ] common.py:[68] root - INFO - Dumping object at stored_models\0\transformer.pkl
+[ 2024-10-07 20:41:36,356 ] common.py:[68] root - INFO - Dumping object at stored_models\0\model.pkl
+[ 2024-10-07 20:41:36,439 ] common.py:[68] root - INFO - Dumping object at stored_models\0\target_encoder.pkl
+[ 2024-10-07 20:41:36,447 ] pusher.py:[50] root - INFO - ModelPusherArtifact(self_dir=WindowsPath('artifacts/100724__20/model_pusher'), root_saved_model_dir=WindowsPath('stored_models'))
+[ 2024-10-07 20:41:36,456 ] app.py:[32] app - INFO - Training completed.
+[ 2024-10-07 20:41:36,518 ] _internal.py:[97] werkzeug - INFO - 127.0.0.1 - - [07/Oct/2024 20:41:36] "POST /train_model HTTP/1.1" 200 -
+[ 2024-10-07 20:41:56,001 ] _internal.py:[97] werkzeug - INFO - 127.0.0.1 - - [07/Oct/2024 20:41:56] "GET /predict HTTP/1.1" 200 -
+[ 2024-10-07 20:43:01,687 ] prediction.py:[28] root - INFO - Loading pickled transformers to transform dataset.
+[ 2024-10-07 20:43:01,687 ] common.py:[75] root - INFO - Loading object from stored_models\0\transformer.pkl
+[ 2024-10-07 20:43:01,717 ] common.py:[75] root - INFO - Loading object from stored_models\0\target_encoder.pkl
+[ 2024-10-07 20:43:01,719 ] common.py:[75] root - INFO - Loading object from stored_models\0\model.pkl
+[ 2024-10-07 20:43:02,004 ] _internal.py:[97] werkzeug - INFO - 127.0.0.1 - - [07/Oct/2024 20:43:02] "POST /one_prediction HTTP/1.1" 200 -
+[ 2024-10-07 20:43:21,101 ] _internal.py:[97] werkzeug - INFO - 127.0.0.1 - - [07/Oct/2024 20:43:21] "GET / HTTP/1.1" 200 -

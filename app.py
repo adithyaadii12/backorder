@@ -30,7 +30,7 @@ def train_model():
     try:
         training.initiate()  # Start training process
         app.logger.info("Training completed.")  # Log the completion of training
-        return jsonify({'message': 'Model Training Completed!'})
+        return render_template('train_completed.html', message='Model Training Completed!')
     except Exception as e:
         app.logger.error(f"Error during training: {e}")  # Log any error that occurs
         return jsonify({'error': f"An error occurred during training: {e}"})
@@ -49,7 +49,8 @@ def one_prediction():
     df = pd.DataFrame([form_data.values()], columns=list(form_data.keys()))
     try:
         prediction_result = pipeline.Prediction.one_prediction(df)
-        return jsonify(list(prediction_result.T.to_dict().values())[0])
+        result = list(prediction_result.T.to_dict().values())[0]
+        return render_template('prediction_result.html', result=result)
     except Exception as e:
         app.logger.error(f"Error during one_prediction: {e}")
         return jsonify({'error': f"Error during prediction: {e}"})
@@ -66,10 +67,7 @@ def batch_prediction():
     try:
         df = pd.read_csv(file.stream, low_memory=False)
         prediction_fp = prediction.batch_prediction(df)
-        return {
-            'message': 'Prediction Completed!',
-            'prediction_path': prediction_fp.absolute().as_uri(),
-        }
+        return render_template('batch_prediction_result.html', prediction_path=prediction_fp.absolute().as_uri())
     except Exception as e:
         app.logger.error(f"Error during batch prediction: {e}")
         return jsonify({'error': f"Error occurred: {e}"})

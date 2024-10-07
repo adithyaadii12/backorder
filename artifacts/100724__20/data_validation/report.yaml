@@ -1,0 +1,134 @@
+data_drift_within_test_dataset:
+  deck_risk:
+    pvalues: 7.751224271268778e-56
+    same_distribution: false
+  forecast_3_month:
+    pvalues: 0.0
+    same_distribution: false
+  forecast_6_month:
+    pvalues: 0.0
+    same_distribution: false
+  forecast_9_month:
+    pvalues: 0.0
+    same_distribution: false
+  in_transit_qty:
+    pvalues: 5.903881749593503e-48
+    same_distribution: false
+  lead_time:
+    pvalues: 1.2903622923755193e-162
+    same_distribution: false
+  local_bo_qty:
+    pvalues: 0.0
+    same_distribution: false
+  min_bank:
+    pvalues: 3.6536852673998954e-84
+    same_distribution: false
+  national_inv:
+    pvalues: 0.0
+    same_distribution: false
+  oe_constraint:
+    pvalues: 1.0
+    same_distribution: true
+  perf_12_month_avg:
+    pvalues: 1.6717338838644014e-79
+    same_distribution: false
+  perf_6_month_avg:
+    pvalues: 3.356100426790561e-66
+    same_distribution: false
+  pieces_past_due:
+    pvalues: 1.9345228145279235e-36
+    same_distribution: false
+  potential_issue:
+    pvalues: 0.9424001815950487
+    same_distribution: true
+  ppap_risk:
+    pvalues: 1.3935348816499455e-26
+    same_distribution: false
+  rev_stop:
+    pvalues: 1.0
+    same_distribution: true
+  sales_1_month:
+    pvalues: 0.0
+    same_distribution: false
+  sales_3_month:
+    pvalues: 0.0
+    same_distribution: false
+  sales_6_month:
+    pvalues: 0.0
+    same_distribution: false
+  sales_9_month:
+    pvalues: 0.0
+    same_distribution: false
+  stop_auto_buy:
+    pvalues: 0.8133259259843189
+    same_distribution: true
+  went_on_backorder:
+    pvalues: 0.0
+    same_distribution: false
+data_drift_within_train_dataset:
+  deck_risk:
+    pvalues: 1.256479940599301e-119
+    same_distribution: false
+  forecast_3_month:
+    pvalues: 0.0
+    same_distribution: false
+  forecast_6_month:
+    pvalues: 0.0
+    same_distribution: false
+  forecast_9_month:
+    pvalues: 0.0
+    same_distribution: false
+  in_transit_qty:
+    pvalues: 4.511559359929272e-105
+    same_distribution: false
+  lead_time:
+    pvalues: 0.0
+    same_distribution: false
+  local_bo_qty:
+    pvalues: 0.0
+    same_distribution: false
+  min_bank:
+    pvalues: 3.0780631322016257e-165
+    same_distribution: false
+  national_inv:
+    pvalues: 0.0
+    same_distribution: false
+  oe_constraint:
+    pvalues: 1.0
+    same_distribution: true
+  perf_12_month_avg:
+    pvalues: 3.0996769911009602e-170
+    same_distribution: false
+  perf_6_month_avg:
+    pvalues: 2.3577255124611324e-151
+    same_distribution: false
+  pieces_past_due:
+    pvalues: 1.11510324169494e-70
+    same_distribution: false
+  potential_issue:
+    pvalues: 0.666085726170001
+    same_distribution: true
+  ppap_risk:
+    pvalues: 8.233102851551492e-59
+    same_distribution: false
+  rev_stop:
+    pvalues: 1.0
+    same_distribution: true
+  sales_1_month:
+    pvalues: 0.0
+    same_distribution: false
+  sales_3_month:
+    pvalues: 0.0
+    same_distribution: false
+  sales_6_month:
+    pvalues: 0.0
+    same_distribution: false
+  sales_9_month:
+    pvalues: 0.0
+    same_distribution: false
+  stop_auto_buy:
+    pvalues: 0.16736731985371944
+    same_distribution: true
+  went_on_backorder:
+    pvalues: 0.0
+    same_distribution: false
