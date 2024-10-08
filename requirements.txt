@@ -12,3 +12,6 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
+ensure==1.0.3
+python-box==6.0.2
+-e .
