@@ -6,8 +6,8 @@ import logging
 # Add your backorder project to system path
 sys.path.append('C:\\Users\\adith\\Desktop\\backorder\\src')
 
-from backorder_project import pipeline
-from backorder_project.entity import DataIngestionConfig
+from src.backorder_project import pipeline
+from src.backorder_project.entity import DataIngestionConfig
 
 # Initialize Flask app
 app = Flask(__name__)
