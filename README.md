@@ -11,10 +11,15 @@ Results: The results are displayed as a table with a column indicating whether a
 
 ***Model training pipeline***
 Data Collection: Historical sales, inventory, and supplier data are collected.
+
 Data Preprocessing: Missing values are handled, categorical variables are encoded, and data is normalized.
+
 Feature Engineering: New features are created from the raw data to enhance the predictive power of the model.
+
 Model Training: Various machine learning algorithms (e.g., Random Forest, decision tree ) are trained, and hyperparameters are optimized using cross-validation.
+
 Model Evaluation: Models are evaluated using metrics such as Model accuracy, training score , test score.
+
 Model Saving: The best-performing model is saved for deployment.
 
 The application is deployed using Flask and can be containerized with Docker. Continuous Integration/Continuous Delivery (CI/CD) pipelines are set up with GitHub Actions.
