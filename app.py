@@ -4,7 +4,8 @@ import sys
 import logging
 
 # Add your backorder project to system path
-sys.path.append('C:\\Users\\adith\\Desktop\\backorder\\src')
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+#sys.path.append('C:\\Users\\adith\\Desktop\\backorder\\src')
 
 from src.backorder_project import pipeline
 from src.backorder_project.entity import DataIngestionConfig
