@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from flask import Flask, jsonify, render_template, request
 import sys
@@ -49,7 +50,7 @@ def one_prediction():
     form_data = dict(request.form)
     df = pd.DataFrame([form_data.values()], columns=list(form_data.keys()))
     try:
-        prediction_result = pipeline.Prediction.one_prediction(df)
+        prediction_result = prediction.one_prediction(df)
         result = list(prediction_result.T.to_dict().values())[0]
         return render_template('prediction_result.html', result=result)
     except Exception as e:
